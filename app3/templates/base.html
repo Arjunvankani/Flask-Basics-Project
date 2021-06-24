@@ -1,0 +1,14 @@
+<p>
+	{% if bread %}
+		The bread you enterd is <h1>{{bread}}</h1> .
+		Now you can input new bread value!!
+	{% else %}
+		Please enter your bread in the form below :
+	{% endif %}
+		
+</p>
+<form method="POST">
+	{{ form.hidden_tag() }}
+	{{ form.bread.label }} {{ form.bread()}}
+	{{ form.submit() }}
+</form>

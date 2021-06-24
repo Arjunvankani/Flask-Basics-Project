@@ -1,0 +1,17 @@
+<h1>Welcome to Survay</h1>
+<form method="POST">
+	{{ form.hidden_tag() }}
+	{{ form.bread.label}} {{ form.bread }}
+	<br>
+	{{ form.food_choice.label}} {{ form.food_choice }}
+	<br>
+	{{ form.mood.label}} {{ form.mood }}
+	<br>
+	ANY OTHER FEEDBACK ??
+	<br>
+	{{ form.feedback}} 
+	<br>
+	{{ form.submit() }}
+	<br>
+
+</form>
